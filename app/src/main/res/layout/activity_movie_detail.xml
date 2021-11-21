@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="86dp"
+        android:layout_height="93dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/nameMV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title: " />
+
+    <TextView
+        android:id="@+id/nameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TITLE"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/descptMV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overview: " />
+
+    <TextView
+        android:id="@+id/descptET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OVERVIEW"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/reviewMV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews" />
+
+    <TextView
+        android:id="@+id/review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="No Reviews yet. \nLong press here to add your review." />
+
+
+    <TextView
+        android:id="@+id/radiogrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language: " />
+
+    <TextView
+        android:id="@+id/radio_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/redate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release date: " />
+
+    <TextView
+        android:id="@+id/redateET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/suitable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suitable for children below 13: " />
+
+    <TextView
+        android:id="@+id/chkbx_notforall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:textSize="20sp" />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listView_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="multipleChoice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameMV"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/nameMV"
+        android:autofillHints="Enter you name here"
+        android:inputType="textCapSentences" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descptMV"
+        android:text="Description"
+        android:layout_below="@+id/nameET"/>
+
+    <EditText
+        android:id="@+id/descptET"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/descptMV"
+        android:autofillHints="Enter you description here"
+        android:inputType="textCapSentences"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/languageMV"
+        android:text="Language"
+        android:layout_below="@+id/descptET" />
+
+    <RadioGroup
+        android:id="@+id/radiogrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/languageMV"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English" />
+
+        <RadioButton
+            android:id="@+id/radio_chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chinese" />
+        <RadioButton
+            android:id="@+id/radio_malay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Malay" />
+        <RadioButton
+            android:id="@+id/radio_Tamil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamil" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/redate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/languageMV"
+        android:layout_marginTop="45dp"
+        android:text="Release date:" />
+
+    <EditText
+        android:id="@+id/redateET"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/redate"
+        android:autofillHints="dd-mm-yyyy"
+        android:inputType="date"
+        tools:ignore="LabelFor" />
+
+    <CheckBox
+        android:id="@+id/chkbx_notforall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not suitable for all audience "
+        android:layout_below="@+id/redateET" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/chkbx_violence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chkbx_notforall"
+            android:text="Violence"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/chkbx_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:text="Language used"
+            android:visibility="gone"/>
+    </TableRow>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkbx_violence"
+        android:layout_centerHorizontal="true"
+        android:text="ADD MOVIE" />
+
+</LinearLayout>
